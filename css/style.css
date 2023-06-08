@@ -1,0 +1,99 @@
+body {
+  background-color: bisque;
+  background-image: url("../img/background.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+}
+h1 {
+  border: 20px solid rgb(206, 157, 23);
+  color: rgb(228, 140, 8);
+  text-align: center;
+}
+p {
+  text-align: center;
+  background-color: cyan;
+}
+
+.p1 {
+  font-size: 30px;
+  background-color: brown;
+}
+
+.p2 {
+  font-size: 30px;
+  background-color: crimson;
+}
+.note {
+  color: chocolate;
+  font-size: 40px;
+  box-shadow: chocolate;
+}
+img {
+  /* width: 300px;
+  height: 300px; */
+  /*float: right;*/
+}
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+.section {
+  display: flex;
+}
+/* Create two columns/boxes that floats next to each other */
+
+/* Style the list inside the menu */
+/*nav ul {
+  list-style-type: none;
+  padding: 0;
+}*/
+.section > div {
+  text-align: center;
+}
+.side {
+  flex: 30%;
+  flex-direction: column;
+}
+.side > .side_img {
+  flex: 80%;
+}
+.side > .side_statements {
+  flex: 20%;
+  background-color: #777;
+  padding: 0;
+}
+.article {
+  flex: 70%;
+  /*padding: 20px;*/
+  /* width: 70%; */
+  font-size: 1vw;
+  background-color: rgb(228, 140, 8);
+  /* height: 300px; */
+}
+
+/* Clear floats after the columns */
+/* section::after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav,
+  article {
+    width: 100%;
+    height: auto;
+  }
+}
